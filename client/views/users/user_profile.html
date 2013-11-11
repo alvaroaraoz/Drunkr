@@ -7,11 +7,11 @@
 					<td colspan="2"><img class="user-avatar" src="{{avatarUrl}}"/></td>
 				</tr>
 				<tr>
-					<td>Name: </td>
+					<td>Nombre: </td>
 					<td>{{profile.name}}</td>
 				</tr>
 				<tr>
-					<td>Member since: </td>
+					<td>Informador desde: </td>
 					<td>{{createdAtFormatted}}</td>
 				</tr>
 				<tr>
@@ -23,26 +23,14 @@
 						<td>Twitter: </td>
 						<td><a href="http://twitter.com/{{getTwitterName}}">{{getTwitterName}}</a></td>
 					</tr>
-				{{/if}}
-				{{#if getGitHubName}}
-					<tr>
-						<td>GitHub: </td>
-						<td><a href="http://github.com/{{getGitHubName}}">{{getGitHubName}}</a></td>
-					</tr>
-				{{/if}}
-				{{#if site}}
-					<tr>
-						<td>Site: </td>
-						<td><a href="{{profile.site}}">{{profile.site}}</a></td>
-					</tr>
 				{{/if}}					
 			</table>
 			{{#if canEditProfile}}
-				<a class="button inline" href="/users/{{slug}}/edit">Edit profile</a>
+				<a class="button inline" href="/users/{{slug}}/edit">Editar perfil</a>
 			{{/if}}
 			{{#if canInvite}}
 				{{#if invitesCount}}
-					<a class="button inline invite-link" href="#">Invite ({{invitesCount}} left)</a>
+					<a class="button inline invite-link" href="#">Invitaciones ({{invitesCount}} left)</a>
 				{{else}}
 					<a class="button inline disabled" href="#">Invite (none left)</a>
 				{{/if}}
