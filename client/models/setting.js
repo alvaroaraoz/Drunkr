@@ -41,11 +41,11 @@ Setting = FormModel.extend({
   init: function(options) {
     this._super(Settings, options);
     this.overwriteTitle('scoreUpdateInterval', 'Scoring Frequency'); 
-    this.overwriteTitle('requireViewInvite', '¿Require invite to view?');
-    this.overwriteTitle('requirePostInvite', 'Require invite to post?');
-    this.overwriteTitle('emailNotifications', 'Enable email notifications?');
+    this.overwriteTitle('requireViewInvite', 'Invitación requerida para ver');
+    this.overwriteTitle('requirePostInvite', 'Invitación requerida para informar');
+    this.overwriteTitle('emailNotifications', 'Activar notificaciones por email');
     this.overwriteTitle('requirePostsApproval', 'Posts must be approved by admin?');
-    this.overwriteTitle('title', 'Site Title');
+    this.overwriteTitle('title', 'Título de la página');
     this.overwriteTitle('mixpanelId', '<a href="http://mixpanel.com/">Mixpanel</a> ID');
     this.overwriteTitle('clickyId', '<a href="http://getclicky.com/">Clicky</a> ID');
     this.overwriteTitle('goSquaredId', '<a href="http://gosquared.com/">GoSquared</a> ID');
