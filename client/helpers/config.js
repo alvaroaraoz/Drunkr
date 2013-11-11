@@ -24,7 +24,7 @@ SharrreOptions={
 	  // facebook: {layout: 'box_count'},
 	  twitter: {
 	    count: 'vertical',
-	    via: 'TelescopeApp'
+	    via: 'drunkr_es'
 	  },
 	},
 	enableHover: false,
