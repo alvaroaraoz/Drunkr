@@ -3,18 +3,18 @@
     <form class="grid-block form-horizontal">
       {{#constant}}
       <div class="control-group">
-        <label class="control-label">URL</label>
+        <label class="control-label">Dirección (Aprox.)</label>
         <div class="controls"><input id="url" type="text" value="" /></div>
       </div>
       <div class="control-group">
         <label class="control-label">Title</label>
         <div class="controls"><input id="title" type="text" value="" /><a href="#" class="get-title-link inline-link">Suggest title</a></div>
       </div>
-      <div class="control-group">
+     <!-- <div class="control-group">
         <label class="control-label">Message</label>
         <div class="controls" id="editor"><textarea id="body" value="" class="input-xlarge"/></div>
-      </div>
-      <div class="control-group">
+      </div> -->
+      <!-- <div class="control-group">
         <label class="control-label">Category</label>
         <div class="controls">
           {{#each categories}}
@@ -23,7 +23,7 @@
           </label>
           {{/each}}
         </div>
-      </div>
+      </div> -->
       {{/constant}}
       {{#if isAdmin}}
         {{#constant}}
