@@ -41,7 +41,7 @@ Setting = FormModel.extend({
   init: function(options) {
     this._super(Settings, options);
     this.overwriteTitle('scoreUpdateInterval', 'Scoring Frequency'); 
-    this.overwriteTitle('requireViewInvite', 'Require invite to view?');
+    this.overwriteTitle('requireViewInvite', '¿Require invite to view?');
     this.overwriteTitle('requirePostInvite', 'Require invite to post?');
     this.overwriteTitle('emailNotifications', 'Enable email notifications?');
     this.overwriteTitle('requirePostsApproval', 'Posts must be approved by admin?');
