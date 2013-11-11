@@ -40,6 +40,7 @@ Template.post_submit.events = {
     var title= $('#title').val();
     var url = $('#url').val();
     var shortUrl = $('#short-url').val();
+    var body = instance.editor.exportFile();
     var categories=[];
     var sticky=!!$('#sticky').attr('checked');
     var submitted = $('#submitted_hidden').val();
@@ -52,6 +53,7 @@ Template.post_submit.events = {
 
     var properties = {
         headline: title
+      , body: body
       , shortUrl: shortUrl
       , categories: categories
       , sticky: sticky
@@ -60,7 +62,7 @@ Template.post_submit.events = {
       , status: status
     };
     if(url){
-      var cleanUrl = (url.substring(0, 7) == "http://www.google.com/maps?q=" || url.substring(0, 8) == "https://www.google.com/maps?q=") ? url : "http://www.google.com/maps?q="+url;
+      var cleanUrl = (url.substring(0, 7) == "http://" || url.substring(0, 8) == "https://") ? url : "http://"+url;
       properties.url = cleanUrl;
     }
 
