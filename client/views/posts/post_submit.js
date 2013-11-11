@@ -62,7 +62,7 @@ Template.post_submit.events = {
       , status: status
     };
     if(url){
-      var cleanUrl = (url.substring(0, 7) == "http://" || url.substring(0, 8) == "https://") ? url : "http://"+url;
+      var cleanUrl = (url.substring(0, 7) == "" || url.substring(0, 8) == "") ? url : ""+url;
       properties.url = cleanUrl;
     }
 
