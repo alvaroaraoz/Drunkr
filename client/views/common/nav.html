@@ -6,20 +6,7 @@
     <ul class="nav site-nav desktop">
       {{#if canView}}
       <li><a class="new" href="/new">Últimos controles</a></a></li>
-      <!-- <li><a class="best" href="/best">Best</a></li> -->
       <li><a class="digest" href="/digest">Digest</a></li>
-      {{/if}}
-      {{#if hasCategories}}
-      <!-- <li class="dropdown">
-        <a class="categories" href="/">Categories</a>
-        <div class="dropdown-menu">
-          <ul role="menu" aria-labelledby="dLabel">
-            {{# each categories}}
-              <li><a class="pending" href="{{categoryLink}}">{{name}}</a></li>
-            {{/each}}
-          </ul>
-        </div>
-      </li> -->
       {{/if}}
       {{#if isAdmin}}
       <li class="dropdown">
