@@ -52,7 +52,7 @@ Template.post_item.helpers({
   },
   timestamp: function(){
     time = this.status == STATUS_APPROVED ? this.submitted : this.createdAt;
-    return moment(time).format("MMMM Do, h:mm:ss a");
+    return moment(time).format("Do MMMM, h:mm:ss a");
   },
   voted: function(){
     var user = Meteor.user();
