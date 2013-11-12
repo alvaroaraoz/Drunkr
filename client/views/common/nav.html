@@ -40,20 +40,9 @@
     </ul>
     {{/if}}
     
-     <ul class="nav site-nav desktop">
-      <li><a class="new" href="/new">Acceder</a></a></li>
-      {{#with user}}
-      <li class="dropdown">
-        <a class="admin" href="/">nombre</a>
-        <div class="dropdown-menu">
-          <ul role="menu" aria-labelledby="dLabel">
-            <li><a class="settings" href="/account">Settings</a></li>
-          </ul>
-        </div>
-      </li>
-      {{/if}}
-    </ul>
-    {{#with user}}
+     <div class="auth-buttons">
+      {{loginButtons align="right"}}
+    </div>
 
   </header>
 </template>
