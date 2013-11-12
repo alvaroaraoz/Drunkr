@@ -14,7 +14,7 @@ Template.post_edit.helpers({
     return Posts.findOne(this.postId);
   },
   created: function(){
-    return moment(this.createdAt).format("MMMM Do, h:mm:ss a");
+    return moment(this.createdAt).format("Do MMMM, h:mm:ss a");
   },
   categories: function(){
     var post = this;
