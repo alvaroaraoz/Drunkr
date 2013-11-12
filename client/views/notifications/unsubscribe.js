@@ -4,7 +4,7 @@ Template.unsubscribe.created = function(){
     if(result){
       Session.set('unsubscribedMessage', 'You have been unsubscribed from all notifications.');
     }else{
-      Session.set('unsubscribedMessage', 'User not found.');
+      Session.set('unsubscribedMessage', 'Informado no encontrado.');
     }
   });
   trackEvent('notificationsUnsubcribe', {hash: hash});
