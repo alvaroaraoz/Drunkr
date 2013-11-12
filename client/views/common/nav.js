@@ -15,7 +15,7 @@ Template.nav.events = {
 
 Template.nav.rendered=function(){
   if(!Meteor.user()){
-    $('#login-buttons-logout').before('<a href="/signin" class="account-link button">Acceder</a>');
+    $('.login-link-text').text("Sign Up/Sign In");
   }else{
     $('#login-buttons-logout').before('<a href="/users/'+Meteor.user().slug+'" class="account-link button">Ver Perfil</a>');
     $('#login-buttons-logout').before('<a href="/account" class="account-link button">Editar Cuenta</a>');
