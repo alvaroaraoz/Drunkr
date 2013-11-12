@@ -340,24 +340,24 @@
 	var DPGlobal = {
 		modes: [
 			{
-				clsName: 'days',
-				navFnc: 'Month',
+				clsName: 'días',
+				navFnc: 'Mes',
 				navStep: 1
 			},
 			{
-				clsName: 'months',
+				clsName: 'mesess',
 				navFnc: 'FullYear',
 				navStep: 1
 			},
 			{
-				clsName: 'years',
+				clsName: 'años',
 				navFnc: 'FullYear',
 				navStep: 10
 		}],
 		dates:{
-			days: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-			daysShort: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
-			daysMin: ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"],
+			days: ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sabado", "Domingo"],
+			daysShort: ["D", "L", "M", "X", "J", "V", "S", "D"],
+			daysMin: ["D", "L", "M", "X", "J", "V", "S", "D"],
 			months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
 			monthsShort: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 		},
