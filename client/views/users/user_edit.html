@@ -7,13 +7,13 @@
     </div>
     {{/if}}
     <form>
-      <h2>Account</h2>
+      <h2>Editar Pèrfil</h2>
       <div class="control-group">
-        <label>Username</label>
+        <label>Nombre de usuario</label>
         <div class="controls">
           <input id="username" name="username" disabled="disabled" type="text" value="{{userName}}" />
         </div>
-        <p class="note">Profile URL: {{profileUrl}}</p>
+        <p class="note">URL de tu perfil: {{profileUrl}}</p>
       </div>
 <!--       <div class="control-group">
         <label>Email</label>
@@ -22,7 +22,7 @@
         </div>
       </div> -->
       <div class="control-group">
-        <label>Display Name</label>
+        <label>Nombre a mostrar</label>
         <div class="controls">
           <input name="name" type="text" value="{{profile.name}}" />
         </div>
@@ -38,12 +38,12 @@
         <div class="controls"><textarea name="bio" type="text">{{profile.bio}}</textarea></div>
       </div>
       <div class="control-group">
-      <label>Twitter Username</label>
+      <label>Usuario de Twitter</label>
         <div class="controls">
           <input name="twitter" type="text" value="{{getTwitter}}" />
         </div>
       </div>
-      <div class="control-group">
+      <!-- <div class="control-group">
         <label>GitHub Username</label>
         <div class="controls">
           <input name="github" type="text" value="{{getGitHub}}" />
@@ -54,42 +54,42 @@
         <div class="controls">
           <input name="site" type="text" value="{{profile.site}}" />
         </div>
-      </div>
-      <h3>Change Password?</h3>
+      </div> -->
+      <h3>Cambia tu Contraseña</h3>
       <div class="control-group">
-        <label>Old Password</label>
+        <label>Antigua Contraseña</label>
         <div class="controls"><input name="old_password" type="password" value="" /></div>
       </div>
       <div class="control-group">
-        <label>New Password</label>
+        <label>Nueva Contraseña</label>
         <div class="controls"><input name="new_password" type="password" value="" /></div>
       </div>
       <div class="control-group">
-        <label class="control-label">Email Notifications</label>
+        <label class="control-label">Notificaciones de Email</label>
         <div class="controls">
           <label class="checkbox">
-            <input id="notifications_posts" type="checkbox" name="notifications_posts" {{hasNotificationsPosts}} /> New Posts
+            <input id="notifications_posts" type="checkbox" name="notifications_posts" {{hasNotificationsPosts}} /> Nuevos Controles
           </label>
           <label class="checkbox">
-            <input id="notifications_comments" type="checkbox" name="notifications_comments" {{hasNotificationsComments}} /> Comments on my posts
+            <input id="notifications_comments" type="checkbox" name="notifications_comments" {{hasNotificationsComments}} /> Opiniones en mis controles
           </label>
           <label class="checkbox">
-            <input id="notifications_replies" type="checkbox" name="notifications_replies" {{hasNotificationsReplies}} /> Replies to my comments
+            <input id="notifications_replies" type="checkbox" name="notifications_replies" {{hasNotificationsReplies}} /> Respuestas a mis opiniones
           </label>
         </div>
       </div>
       {{#if isAdmin}}
       <div class="control-group">
-        <h3>Invites</h3>
-        <label>Invites</label>
+        <h3>Invitaciones</h3>
+        <label>Invitaciones</label>
         <div class="controls">
           <input name="invitesCount" type="text" value="{{invitesCount}}" />
         </div>
       </div>
       {{/if}}
       <div class="form-actions">
-        <a href="/forgot_password">Forgot password?</a>
-        <input type="submit" class="button" value="Submit" />
+        <a href="/forgot_password">¿Contraseña olvidada?</a>
+        <input type="submit" class="button" value="Guardar" />
       </div>
     </form>
     {{/with}}
