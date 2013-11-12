@@ -18,7 +18,7 @@ Template.nav.rendered=function(){
     $('.login-link-text').text("Registrarse/Acceder");
   }else{
     $('#login-buttons-logout').before('<a href="/users/'+Meteor.user().slug+'" class="account-link button">Ver Perfil</a>');
-    $('#login-buttons-logout').before('<a href="/account" class="account-link button">Editar Cuenta</a>');
+    $('#login-buttons-logout').before('<a href="/account" class="account-link button">Editar Perfil</a>');
   }
 };
 
