@@ -14,7 +14,7 @@ Template.post_edit.helpers({
     return Posts.findOne(this.postId);
   },
   created: function(){
-    return moment(this.createdAt).format("MMMM Do, h:mm:ss a");
+    return moment(this.createdAt).format("a MMMM Do, h:mm:ss");
   },
   categories: function(){
     var post = this;
@@ -33,7 +33,7 @@ Template.post_edit.helpers({
     return post && this._id == post.userId ? 'selected' : '';
   },
   submittedDate: function(){
-    return moment(this.submitted).format("MM/DD/YYYY");
+    return moment(this.submitted).format("DD/MM/YYYY");
   },
   submittedTime: function(){
     return moment(this.submitted).format("HH:mm");
