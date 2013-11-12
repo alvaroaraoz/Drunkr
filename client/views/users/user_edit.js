@@ -69,7 +69,7 @@ Template.user_edit.events = {
       if(error){
         throwError(error.reason);
       } else {
-        throwError('Profile updated');
+        throwError('¡Perfil Actualizado!');
       }
     });
   }
