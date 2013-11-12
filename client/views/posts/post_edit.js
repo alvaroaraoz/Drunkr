@@ -100,7 +100,7 @@ Template.post_edit.events = {
     };
 
     if(url){
-      properties.url = (url.substring(0, 7) == "http://" || url.substring(0, 8) == "https://") ? url : "http://"+url;
+      properties.url = (url.substring(0, 7) == "" || url.substring(0, 8) == "") ? url : ""+url;
     }
 
     if(isAdmin(Meteor.user())){
