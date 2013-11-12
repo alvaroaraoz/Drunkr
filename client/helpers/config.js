@@ -15,13 +15,13 @@ EpicEditorOptions={
 
 SharrreOptions={
 	share: {
-	  // googlePlus: true,
-	  facebook: true,
+	  googlePlus: false,
+	  // facebook: true,
 	  twitter: true,
 	},
 	buttons: {
-	  // googlePlus: {size: 'tall', annotation:'bubble'},
-	  facebook: {layout: 'box_count'},
+	  googlePlus: {size: 'tall', annotation:'bubble'},
+	  // facebook: {layout: 'box_count'},
 	  twitter: {
 	    count: 'vertical',
 	    via: 'drunkr_es'
