@@ -5,9 +5,9 @@ Template.notifications.helpers({
   notification_count: function(){
   	var notifications=Notifications.find({userId: Meteor.userId(), read: false}).fetch();
   	if(notifications.length==0){
-  		return 'No notifications';
+  		return 'No hay notificaciones';
   	}else if(notifications.length==1){
-  		return '1 notification';
+  		return '1 notificación';
   	}else{
   		return notifications.length+' notifications';
   	}
