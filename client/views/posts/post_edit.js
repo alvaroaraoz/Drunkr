@@ -33,7 +33,7 @@ Template.post_edit.helpers({
     return post && this._id == post.userId ? 'selected' : '';
   },
   submittedDate: function(){
-    return moment(this.submitted).format("DD/MM/YYYY");
+    return moment(this.submitted).format("MM/DD/YYYY");
   },
   submittedTime: function(){
     return moment(this.submitted).format("HH:mm");
