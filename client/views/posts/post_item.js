@@ -70,10 +70,10 @@ Template.post_item.helpers({
     return getCategoryUrl(this.slug);
   },
   commentsDisplayText: function(){
-    return this.comments == 1 ? 'comment' : 'comments';
+    return this.comments == 1 ? 'opinion' : 'opiniones';
   },
   pointsUnitDisplayText: function(){
-    return this.votes == 1 ? 'point' : 'points';
+    return this.votes == 1 ? 'punto' : 'puntos';
   }
 });
 
