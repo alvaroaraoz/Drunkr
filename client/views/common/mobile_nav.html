@@ -3,6 +3,18 @@
     <div>
       <ul>
         <li><a class="top" href="/new">Últimos controles</a></li>
+      {{#if hasCategories}}
+      <li class="dropdown">
+        <a class="categories" href="/">Ciudades</a>
+        <div class="dropdown-menu">
+          <ul role="menu" aria-labelledby="dLabel">
+            {{# each categories}}
+              <li><a class="pending" href="{{categoryLink}}">{{name}}</a></li>
+            {{/each}}
+          </ul>
+        </div>
+      </li>
+      {{/if}}
         {{#if currentUser.isAdmin}}
           <li><a class="users" href="/users">Usuarios</a></li>
           <li><a class="settings" href="/settings">Ajustes</a></li>
