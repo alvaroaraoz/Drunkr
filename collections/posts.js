@@ -125,19 +125,18 @@ Meteor.methods({
       Posts.update(post._id, { $inc: { clicks: 1 }});
     }
   },
-  removePost: function(postId){
-    var post=Posts.findOne(postId);
-    if(canEdit(Meteor.user(), post)){
-      // decrement post comment count
-      Posts.update(post, {$inc: {posts: -1}});
+  deletePostById: function(postId) {
+    // remove post comments
+    // if(!this.isSimulation) {
+    //   Comments.remove({post: postId});
+    // }
+    // NOTE: actually, keep comments afer all
 
-      // decrement user comment count
-      Meteor.users.update({_id: post.userId}, {$inc: {postCount: -1}});
-
-      // note: should we also decrease user's comment karma ?
-      Posts.remove(postId);
-    }else{
-      throwError("You don't have permission to delete this comment.");
-    }
+    // decrement post count
+    var post = Posts.findOne({_id: postId});
+    if(!Meteor.userId() || !canEditById(Meteor.userId(), post)) throw new Meteor.Error(606, 'You need permission to edit or delete a post');
+    
+    Meteor.users.update({_id: post.userId}, {$inc: {postCount: -1}});
+    Posts.remove(postId);
   }
 });
