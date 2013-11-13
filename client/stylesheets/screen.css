@@ -671,8 +671,8 @@ body.pageslide-open {
 
 /* line 10, ../sass/modules/_header.scss */
 .header {
-  background: #0197bc url("/img/bg-header.png") top center;
-  background-color: #0197bc;
+  background: #4e555d url("/img/bg-header.png") top center;
+  background-color: #4e555d;
   margin-bottom: 10px;
   height: 70px;
   position: relative;
