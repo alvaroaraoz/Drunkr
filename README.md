@@ -7,6 +7,6 @@ Drunkr, a real-time platform to inform where sobriety checkpoints on the streets
 - Password-based and/or Twitter auth
 - Notifications
 - Mobile-ready & responsive
-- Invite-only access for reading and/or posting
+- Invite-only access for posting
 - Markdown support
-- Day by day view
+- Search by city
