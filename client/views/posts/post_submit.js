@@ -76,7 +76,7 @@ Template.post_submit.events = {
       }else{
         trackEvent("new post", {'postId': post.postId});
         if(post.status === STATUS_PENDING)
-          throwError('Thanks, your post is awaiting approval.')
+          throwError('Gracias por informar de un control, lo revisaremos en breves.')
         Router.go('/posts/'+post.postId);
       }
     });
@@ -91,12 +91,12 @@ Template.post_submit.events = {
           if ((suggestedTitle=((/<title>(.*?)<\/title>/m).exec(response.responseText))) != null){
               $("#title").val(suggestedTitle[1]);
           }else{
-              alert("Sorry, couldn't find a title...");
+              alert("Lo sentimos pero no podemos encontrar un titulo...");
           }
           $(".get-title-link").removeClass("loading");
        });
     }else{
-      alert("Please fill in an URL first!");
+      alert("¡Escribe la dirección para el mapa primero!");
       $(".get-title-link").removeClass("loading");
     }
   }
