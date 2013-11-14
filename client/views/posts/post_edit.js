@@ -82,7 +82,7 @@ Template.post_edit.events = {
 
     e.preventDefault();
     if(!Meteor.user()){
-      throwError('You must be logged in.');
+      throwError('Tienes que estar conectado/a.');
       return false;
     }
 
@@ -137,7 +137,7 @@ Template.post_edit.events = {
 
     e.preventDefault();
     
-    if(confirm("Are you sure?")){
+    if(confirm("¿Eliminar control?")){
       Meteor.call("deletePostById", post._id, function(error) {
         if (error) {
           console.log(error);
