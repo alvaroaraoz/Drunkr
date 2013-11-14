@@ -18,7 +18,7 @@ Template.comment_edit.events = {
     e.preventDefault();
 
     if(!Meteor.user())
-      throw 'You must be logged in.';
+      throw 'Tienes que estar conectado/a.';
 
     Comments.update(comment._id, {
       $set: {
@@ -34,7 +34,7 @@ Template.comment_edit.events = {
 
     e.preventDefault();
     
-    if(confirm("Are you sure?")){
+    if(confirm("¿Eliminar opinión?")){
       Meteor.call('removeComment', comment._id);
       Router.go("/comments/deleted");
     }
