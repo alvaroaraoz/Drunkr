@@ -8,8 +8,7 @@
         <div class="comment-main">
           <div class="comment-meta">
             <a class="comment-username" href="{{profileUrl}}">{{authorName}}</a>
-            <span class="comment-time">{{ago}},</span>
-            <a href="/comments/{{_id}}" class="comment-permalink icon-link goto-comment">link</a>
+            <span class="comment-time">{{ago}}</span>
             {{#if can_edit}}
               | <a class="edit-link" href="/comments/{{_id}}/edit">Editar</a>
             {{/if}}
