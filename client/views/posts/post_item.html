@@ -15,19 +15,19 @@
           <span class="action">Opiniones</span>
         </a>
       </li>
-      <li class="post-more mobile"><a class="more-link"><i class="icon-share"></i><span class="action">Text </span></a></li>
+      <li class="post-more mobile"><a class="more-link"><i class="icon-share"></i><span class="action"></span></a></li>
     </ul>
     <div class="post-content">
       <div class="post-upvote">
         {{#if voted}}
-          <span class="upvote-link voted"><i class="icon-check"></i><span>Upvote</span></span>
+          <span class="upvote-link voted"><i class="icon-check"></i><span>Confirmado</span></span>
         {{else}}
-          <a class="upvote-link not-voted" href="#"><i class="icon-up"></i><span>Upvote</span></a>
+          <a class="upvote-link not-voted" href="#"><i class="icon-up"></i><span>Confirmar control</span></a>
         {{/if}}
       </div>
       <div class="post-info">
         {{#if sticky}}
-          <span class="post-sticky"><i class="icon-pin"></i><span>Sticky</span></span>
+          <span class="post-sticky"><i class="icon-pin"></i><span>Control habitual</span></span>
         {{/if}}
         <h3 class="post-heading">
           <a href="http://www.google.com/maps?q={{postLink}}" class="post-title" target="{{postTarget}}">{{headline}}</a>
@@ -40,8 +40,9 @@
           {{#if can_edit}}
             | <a href="/posts/{{_id}}/edit" class="edit-link goto-edit">Editar</a>
           {{/if}}
+            | confirmado por {{votes}} personas
           {{#if currentUser.isAdmin}}
-            | <!-- status: {{status}}</span>, --> votos: {{votes}}, puntuación: {{short_score}}, clics: {{clicks}}
+            | <!-- status: {{status}}</span>, -->clics: {{clicks}}
           {{/if}}
         </p>
       </div>
