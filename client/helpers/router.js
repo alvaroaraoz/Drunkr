@@ -147,7 +147,7 @@ var filters = {
 
   canPost: function () {
     if(!Meteor.loggingIn() && Session.get('settingsLoaded') && !canPost()){
-      throwError("Sorry, you don't have permissions to add new items.")
+      throwError("Lo sentimos pero necesitas una invitación para poder informar sobre nuevos controles.")
       this.render('no_rights');
       this.stop();      
     }
