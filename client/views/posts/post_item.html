@@ -40,7 +40,7 @@
           {{#if can_edit}}
             | <a href="/posts/{{_id}}/edit" class="edit-link goto-edit">Editar</a>
           {{/if}}
-            | confirmado por {{votes}} personas
+            | confirmado por <b>{{votes}}</b> personas
           {{#if currentUser.isAdmin}}
             | <!-- status: {{status}}</span>, -->clics: {{clicks}}
           {{/if}}
