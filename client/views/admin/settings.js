@@ -22,15 +22,15 @@ Template.settings.helpers({
 Template.settings.events = {
   'click input[type=submit]': function(e){
     e.preventDefault();
-    if(!Meteor.user()) throw 'You must be logged in.';
+    if(!Meteor.user()) throw 'Tienes que estar conectado a tu cuenta de administrador.';
 
     settingsForm.submit(
       function(){
-        throwError("Settings have been created");
+        throwError("Se han configurado los ajustes correctamente");
       },
       function(error) {
         if(error) console.log(error);
-          throwError("Settings have been updated");
+          throwError("Ajustes guardados correctamente");
       }
     );
   }
