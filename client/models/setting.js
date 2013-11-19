@@ -44,7 +44,7 @@ Setting = FormModel.extend({
     this.overwriteTitle('requireViewInvite', 'Invitación requerida para ver los controles');
     this.overwriteTitle('requirePostInvite', 'Invitación requerida para informar');
     this.overwriteTitle('emailNotifications', 'Activar notificaciones por email');
-    this.overwriteTitle('requirePostsApproval', 'Posts must be approved by admin?');
+    this.overwriteTitle('requirePostsApproval', '¿Los controles deben ser aprobados por un admin?');
     this.overwriteTitle('title', 'Título de la página');
     this.overwriteTitle('mixpanelId', '<a href="http://mixpanel.com/">Mixpanel</a> ID');
     this.overwriteTitle('clickyId', '<a href="http://getclicky.com/">Clicky</a> ID');
@@ -52,7 +52,7 @@ Setting = FormModel.extend({
     // this.overwriteTitle('bitlyToken', '<a href="https://bitly.com/a/oauth_apps">Bitly</a> Token');
     this.overwriteTitle('mailChimpAPIKey', '<a href="http://mailchimp.com">MailChimp</a> API Key');
     this.overwriteTitle('mailChimpListId', '<a href="http://mailchimp.com">MailChimp</a> List ID');
-    this.overwriteTitle('logoUrl', 'Logo URL');
+    this.overwriteTitle('logoUrl', 'URL del logo');
     this.overwriteType('footerCode', 'textarea');
     this.overwriteType('extraCode', 'textarea');
     this.overwriteType('notes', 'textarea');
